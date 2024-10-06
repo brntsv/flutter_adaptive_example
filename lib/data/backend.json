@@ -1,0 +1,72 @@
+{
+    "sectionOne": {
+        "subsections": [
+            {
+                "headers": [
+                    {
+                        "title": "20-22 сентября"
+                    },
+                    {
+                        "title": "Фестиваль фермерских товаров"
+                    }
+                ],
+                "image": "https://s3-alpha-sig.figma.com/img/dc69/efcc/0495348afb670176564a379ffa29bc78?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZOySfrgYJfpvfvzySe6Kz8gAXmmuk05Zjt-lYBBDkqH9i~icmFIrI2kEqpGaoB3cZn0VnwYbOEldY5KMsEKX-NLPBh8zskXNfexRiL6RiUw2POKyab9G-UzcwdGepiCn36X0tdsDtgZI0dpZjy58V2eZ5ZBWFwi3U1NCBTo-e5pUOCekvBAD~gt6cH6qzCTEXlmOGEPd5G6onDs-lHFu-Vo0GwcSaLF~hvZ-62DolHqbhbr~NUeU8jTLyOLLJfAV0DqoHCRxwQLmuQ6hswN7ujua8D~lVXAjRlvM17XhJSuymby62T-jDl6HHQCcdk3pZT22eMA2iExHYDLyGsgqew__",
+                "linearGradient": {
+                    "start": {
+                        "color": "ADB494",
+                        "opacity": 0,
+                        "stop": 29
+                    },
+                    "end": {
+                        "color": "AEB595",
+                        "opacity": 100,
+                        "stop": 100
+                    }
+                }
+            },
+            {
+                "headers": [
+                    {
+                        "title": "А также:"
+                    },
+                    {
+                        "title": "Выставка тыкв",
+                        "description": "Местные фермеры покажут свои самые большие тыквы. Посоревнуются чья тыква тяжелее и крепче."
+                    }
+                ],
+                "image": "https://s3-alpha-sig.figma.com/img/ddca/9f5a/0bffa1818df549da5645525380b542ae?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=N9M6jiDoe0fK8XxjXEmPeJZhHMht1laSLay0-nS0pudBvrrl~CX0TrLtYaSrMzKYCNB1pDhiGI2C0G7IrYTXH0qiAEguDypYViT2WcvBQyVVCke8XUBTJFrH4SvEOvSMZFylPDVrYl5VFso5x3fIrnP08ITV~a~C5oBwzjlwJyBw9ws0Csk1S2B49OFCbxhHzOWafMppMxG2AqZ7Q2JPRC7zpQCODhV42s727Ym5FJI1ZH7aEmZ89vghnFj971exfhhvONNQIbj3bNNk3T2Js6mLfesGCJHoIhx4vQfo0t79mCANDW4yqknszdDcc5wUQ2BoA3Q7xSmf5fXZ3Pu15Q__",
+                "buttonText": "ЕЩЕ О ВЫСТАВКЕ"
+            }
+        ]
+    },
+    "sectionTwo": {
+        "title": "Что на прилавке",
+        "items": [
+            {
+                "title": "Тыква",
+                "image": "https://s3-alpha-sig.figma.com/img/9e39/def6/81ebf642b6ff6b4a90b85e73c6c65a75?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OZzBvBXyNztwhBTI9KWwrwoLALGcfLswMLPkIwgqUi0CxV8CX7crzSAbwNmdq2B7X6SmQcGKBk~OvYBswTgu050PCqI51TfgJH8tMa~x93yNPzM9RCERlCHqRy40N31Iva48UCUWxP6LE9NdtKgLvAma5taiw94IiNgCGi~cym2rd4No6Ik0qcWpNnvjV2bCq1haze2tNdRs1xFIYz7tImL~sRLxYdvfJtXSQhDQrA-eBnlqUTj4EYhf5sOLYNpj~XnLAR7dj4d0y4P2Xkl64lnvTXtcslCTSTMTgIwWP-ZzProOhZcH1FKbfuSIIDce~Y3KuYTR6JmNbrLASjKqJg__",
+                "price": 500
+            },
+            {
+                "title": "Цветная капуста",
+                "image": "https://s3-alpha-sig.figma.com/img/35de/0442/bf85fa392da4687bb0f59a2a1ec7b6f1?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AljbZ56Ar3CrDp7m73nwF63YJKkpYKO71VJ8MRy1m8d26MjvYQFIP7N~CVtOwsPlJpFEJoT6uEd02xhbtjkUfOvRzicg7BuWp3h4ZQs8TlsDZzHLwtvrpkAdWrcKuaQkvERJ~KLIrCQ9LHexujgwbnRr7F04Yaa9y4RBM-sgbelhQND6srRe-oUsDGE8kzDAEAAmGUgy-RnNzH5cFG72Ky7JaXcmIVlBbmluS4FxaJ994lnmtiSGxbkk3hpPap7SHd3ygyRkpIBaHyWodV~1EKKslwAG-BjywUMZIzV3ec7gDbxahIuC916O2aKQ5C7KvyWwGY1nJD6AytZBvoCtKw__",
+                "price": 350
+            },
+            {
+                "title": "Мята",
+                "image": "https://s3-alpha-sig.figma.com/img/d664/2d4f/2c77a5b606fb29e3aec899cbdbc5989b?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=V1~5~wbm-ul~PsrQArGX5e5p4Sh7hvp6Q-kqbt1COH7L4KBOM1cXUW4iIkZAMmANytIj14g1k9ghLiJ-3XkWowZA1jrTumQbCN19Seb588f1~OZBenksiRTgn6EMqEojditMwOTXQ9Mat0eKVfhG7wQnwcDuLrPK2jzOeLB-ya6Yqnz0eynhdXCFbj0AiKskJtrUTmz79jHJ0XdVT4F2or1B7zJeoHjm3eaRZ9yYCrmZISXtj70O3tkZm6m2zKZD52cZLPX8QuDVSaMJm6aNahcxc8lvRZlIl0u0KHWrBTFHfp9UEcjevaE1kGCgzU0OPczoXAAma7GBMD~XRbJqqA__",
+                "price": 150
+            },
+            {
+                "title": "Базилик",
+                "image": "https://s3-alpha-sig.figma.com/img/022b/1bee/e5d80b8c02e921bd66101e24f93a2ada?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AOdIs9~~Tvcg8Wy9Uk4YcnwgDz6MPBux~e7dgQVYxJoQ8G7xpXUfgFYOtNdf-Zvpz1ebm-CCgr4mIpWKE5Wlu2u9HhIDPsKkC8wyU4Iye1LITajmxsbXzbC5FxZFn1MbbyW6-uOhoPg7e40WZWE2kRbJ0~f-ENFI-XKRWO53hj~VjG95G-MRY9PPCd-XylBmoqdHbCLETFMe99RPoBw~UstOi7buJOfKilto7sZfR2-dCfljUDmkCDJphfojcBFVlo2eAXvEthrS36gswbFHIFxDSB20sNDbzVG6eoXIF3GXpNygBhHkka3B1AcxJRtlthzFVHY5ZOya2InvfYCVIA__",
+                "price": 450
+            },
+            {
+                "title": "Кабачок",
+                "image": "https://s3-alpha-sig.figma.com/img/695b/84ca/049a07d4e9aa4e14d1cb64a1095b3137?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QAM-tkhg2hgbj434LsyE4aJKTSs5CoN8AZE2EMQCJ2O4dNPaILQQxvxN3XBgCPm~iS~rR6vkopP2YfLErZVeCnX4jW6q7CG4LbjyEPIZp6qnHio6IzxJIMZHo3Yzw~k4pJ2maG0aTgjfsTlG3mArYcwmYj8PF3cUKKcS0unDJcna9Rs5qo2N5CpgOH90Sphd-kIk~iMNPAfJ-BgNtgxf8kdvpy4KXrhzYkGac1rOvn8LqvADpSotT807JfiHHl614fmrorZEnTFhcucT5M3Wqw5MTFnlU7Xh4JcmhnEjsnHfcFBzjsjlPkkPqxnnogA4r2B-NCtFcu61yB4donU2ww__",
+                "price": 50
+            }
+        ]
+    }
+}
