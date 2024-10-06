@@ -59,8 +59,10 @@ class SectionTwoWidget extends StatelessWidget {
 
   Widget _buildItemCard(BuildContext context, ItemDto item, bool isWider) {
     final size = MediaQuery.sizeOf(context);
+    const imageSize = 160.0;
+    final imageWidth = isWider ? imageSize : size.width * .4;
     return SizedBox(
-      width: isWider ? 162 : size.width * .4,
+      width: imageWidth,
       child: GestureDetector(
         onTap: () {},
         child: Container(
@@ -87,15 +89,16 @@ class SectionTwoWidget extends StatelessWidget {
   }
 
   Widget _buildItemImage(BuildContext context, String imageUrl, bool isWider) {
-    final sizeScreen = MediaQuery.sizeOf(context);
+    final screenWidth = MediaQuery.sizeOf(context).width;
 
-    final size = isWider ? 160.0 : 150.0;
+    final imageSize = isWider ? 160.0 : 150.0;
+    final imageWidth = isWider ? imageSize : screenWidth * .4;
     return ClipRRect(
       borderRadius: BorderRadius.circular(10),
       child: BaseImage(
         url: imageUrl,
-        height: size,
-        width: isWider ? size : sizeScreen.width * .4,
+        height: imageSize,
+        width: imageWidth,
         boxFit: BoxFit.cover,
       ),
     );
@@ -143,7 +146,7 @@ class SectionTwoWidget extends StatelessWidget {
     const bottomRightCircleSize = 46.0;
 
     return Positioned(
-      bottom: size.height * .02,
+      bottom: 0,
       right: size.width * .02,
       child: Container(
         width: bottomRightCircleSize,

@@ -134,6 +134,7 @@ class SectionOneWidget extends StatelessWidget {
     );
   }
 
+  /// Текстовый контент
   Widget _buildSubsectionOneContent(SubsectionDto subsection, bool isWider) {
     final firstTitle = subsection.headers.first.title;
     final secondTitle = isWider
@@ -144,33 +145,48 @@ class SectionOneWidget extends StatelessWidget {
       children: [
         Text(firstTitle, style: isWider ? UIStyles.w400s30() : UIStyles.w400s20()),
         const SizedBox(height: 12),
-        if (isWider) ...[const Spacer()],
         if (isWider) ...[
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.end,
-            children: [
-              Expanded(
-                child: Text(
-                  secondTitle,
-                  style: UIStyles.w700s40(),
-                  overflow: TextOverflow.ellipsis,
-                ),
-              ),
-              GestureDetector(
-                onTap: () {},
-                child: UIIcons.arrowRight(),
-              ),
-            ],
-          ),
+          const Spacer(),
+          _buildWiderSecondTitleAndArrow(secondTitle),
         ] else ...[
-          Text(secondTitle, style: UIStyles.w700s30()),
-          const SizedBox(height: 24),
-          GestureDetector(
-            onTap: () {},
-            child: UIIcons.arrowRight(),
-          ),
+          _buildNarrowerSecondTitleAndArrow(secondTitle),
         ],
+      ],
+    );
+  }
+
+  /// Десктоп версия
+  Widget _buildWiderSecondTitleAndArrow(String secondTitle) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      crossAxisAlignment: CrossAxisAlignment.end,
+      children: [
+        Expanded(
+          child: Text(
+            secondTitle,
+            style: UIStyles.w700s40(),
+            overflow: TextOverflow.ellipsis,
+          ),
+        ),
+        GestureDetector(
+          onTap: () {},
+          child: UIIcons.arrowRight(),
+        ),
+      ],
+    );
+  }
+
+  /// МП версия
+  Widget _buildNarrowerSecondTitleAndArrow(String secondTitle) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(secondTitle, style: UIStyles.w700s30()),
+        const SizedBox(height: 24),
+        GestureDetector(
+          onTap: () {},
+          child: UIIcons.arrowRight(),
+        ),
       ],
     );
   }
@@ -199,7 +215,7 @@ class SectionOneWidget extends StatelessWidget {
               Text(title.title, style: isWider ? UIStyles.w400s30() : UIStyles.w400s20()),
               Text(subtitle.title, style: isWider ? UIStyles.w700s30() : UIStyles.w700s20()),
               if (isWider) ...[
-                Text(description, style: isWider ? UIStyles.w400s16() : UIStyles.w400s14()),
+                Text(description, style: UIStyles.w400s16()),
               ],
               const SizedBox(height: 20),
               BaseButton(text: buttonText, onTap: () {}),
@@ -218,12 +234,19 @@ class SectionOneWidget extends StatelessWidget {
     double heightSectionOne,
   ) {
     final size = MediaQuery.sizeOf(context);
+
+    // Определение размеров кругов
     const topRightCircleSize = 99.0;
     const leftCircleSize = 76.0;
     const middleRightCircleSize = 36.0;
 
-    final topRightCirclePosition =
-        isWider ? -(topRightCircleSize / 2) + padding : -(topRightCircleSize / 2);
+    // Расчет позиции верхнего правого круга
+    const topRightCircleOffset = -(topRightCircleSize / 2);
+    final topRightCirclePosition = isWider ? topRightCircleOffset + padding : topRightCircleOffset;
+
+    // Расчет позиции левого круга
+    const leftCircleOffset = -(leftCircleSize / 2);
+    final leftCirclePosition = isWider ? leftCircleOffset + padding : leftCircleOffset;
 
     return [
       Positioned(
@@ -239,7 +262,7 @@ class SectionOneWidget extends StatelessWidget {
         ),
       ),
       Positioned(
-        left: isWider ? -(leftCircleSize / 2) + padding : -(leftCircleSize / 2),
+        left: leftCirclePosition,
         top: heightSectionOne * .4,
         child: Container(
           width: leftCircleSize,
